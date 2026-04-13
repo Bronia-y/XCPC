@@ -16,9 +16,9 @@ void modify(int p, int x) {
 }
 
 // return sum[1, x]
-LL query(int x) {
+LL query(int p) {
     LL ret = 0;
-    for (int i = x; i; i -= lowbit(i)) ret += s[i];
+    for (int i = p; i; i -= lowbit(i)) ret += s[i];
     return ret;
 }
 
